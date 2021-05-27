@@ -1,0 +1,26 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    username: root
+    password: 333
+    url: jdbc:mysql://localhost:3306/flowable_springboot?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2b8&nullCatalogMeansCurrent=true
+    #历史表创建
+  activiti:
+    history-level: full
+    db-history-used: true
+    #关闭bpmn文件自动部署
+    check-process-definitions: false
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+  global-config:
+    db-config:
+      logic-not-delete-value: 1
+      logic-delete-value: 0
+
