@@ -65,7 +65,7 @@ public class ProcessDefinitionController {
             return R.success("部署失败：" + e.getMessage());
         }
 
-        return R.success("部署成功：" + deployment.getId() + fileName);
+        return R.success("部署成功，部署id：" + deployment.getId() + " 流程实例名称" + fileName);
     }
 
     /*在线绘制流程定义，并部署*/

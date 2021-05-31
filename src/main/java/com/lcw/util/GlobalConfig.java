@@ -5,7 +5,7 @@ package com.lcw.util;
  */
 public class GlobalConfig {
 
-    public static final Boolean Test = true;
+    public static final Boolean Test = false;
 
     public enum ResponseCode{
 //        成功

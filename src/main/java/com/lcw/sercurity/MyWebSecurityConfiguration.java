@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 /**
  * @author ManGo
  */
-//@Configuration
+@Configuration
 public class MyWebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Resource

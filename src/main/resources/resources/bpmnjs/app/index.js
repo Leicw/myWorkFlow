@@ -18,7 +18,7 @@ const publicurl = proHost + key;
 var customTranslateModule = {
     translate: ['value', customTranslate]
 };
-debugger
+// debugger
 var container = $('#js-drop-zone');
 var canvas = $('#js-canvas');
 var bpmnModeler = new BpmnModeler({
@@ -46,6 +46,7 @@ if (!window.FileList || !window.FileReader) {
 
 
 $(function () {
+
     // 创建bpmn
     var param = tools.getUrlParam(window.location.href)
         $('.item').show()

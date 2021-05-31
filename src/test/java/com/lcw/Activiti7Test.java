@@ -121,8 +121,8 @@ public class Activiti7Test {
     /*完成任务*/
     @Test
     public void completeTaskTest(){
-        securityUtil.logInAs("l"); //登录
-        Task task = taskRuntime.task("3bb230e0-bd32-11eb-b754-00ff3102abf3");
+//        securityUtil.logInAs("l"); //登录
+        Task task = taskRuntime.task("679d3d86-bf57-11eb-8e9b-00ff3102abf3");
         if(Objects.isNull(task.getAssignee())){
             taskRuntime.claim(TaskPayloadBuilder
                     .claim()
@@ -130,7 +130,7 @@ public class Activiti7Test {
                     .build()
             );
         }
-        taskRuntime.complete(TaskPayloadBuilder.complete().withTaskId("3bb230e0-bd32-11eb-b754-00ff3102abf3").build());
+        taskRuntime.complete(TaskPayloadBuilder.complete().withTaskId("679d3d86-bf57-11eb-8e9b-00ff3102abf3").build());
 
     }
 }
